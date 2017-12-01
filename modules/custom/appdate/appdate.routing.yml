@@ -1,0 +1,9 @@
+ippasia.homepage:
+  path: '/front'
+  defaults:
+    _form: '\Drupal\ippasia\Form\HomepageForm'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+
+

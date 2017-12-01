@@ -1,1 +1,0 @@
-# ippasia-magazine

@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook__entity_presave().
+ * 
+ * Makes an article sticky if the author is a specific user
+ *
+ **/
+function appdate_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  if($entity->bundle() == 'article' && $entity->getOwnerId()=='7') {
+    $entity->sticky = 1;
+  }
+}

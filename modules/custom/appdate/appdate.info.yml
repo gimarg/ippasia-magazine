@@ -1,0 +1,8 @@
+name: AppDate Module
+description: A module created by AppDate to enrich the functionality of the site ippasia-magazine.gr
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:

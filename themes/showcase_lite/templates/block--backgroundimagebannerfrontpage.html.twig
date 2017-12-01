@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div class="background-image-block__section field--mt-background-image-block">
+    <div class="background-image background-image--attachment-scroll" style="background-image: url(themes/showcase_lite/images/young-dressage-rider-on-white-horse-AYJTYH.jpg);">&nbsp;</div>
+
+    <div class="background-image-overlay region--dark-typography region--white-background" style="opacity: 0.6;">&nbsp;</div>
+
+    <div class="container-fluid region--dark-typography region--white-background block">
+    <div class="row bottom-spacing-medium">
+    <div class="col-md-8 col-md-offset-2 text-center">
+    <h3 class="block-title block-title--extra-large">Περιοδικό ΙΠΠΑΣΙΑ</h3>
+
+    <div class="bottom-spacing-medium">
+    <p class="large">Έγκυρη, πλήρης & αντικειμενική ΕΝΗΜΕΡΩΣΗ</p>
+    </div>
+
+    <div class="bottom-spacing-large">
+    <p class="text-center"><a class="button" href="/contact">Άρθρα & Νέα</a><a class="button" href="/sindromes">Γίνετε Συνδρομητής</a></p>
+    </div>
+
+    <div class="scroll-button smooth-scroll"><a href="#page-start"><span class="sr-only">Αρχή</span></a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+  {% endblock %}
+</div>

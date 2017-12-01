@@ -1,0 +1,21 @@
+
+.page-node-type-article .filter-wrapper {
+  display: none;
+}
+.page-node-type-article #edit-preview {
+  display: none;
+}
+.node--type-epistole .apopseis {
+  display: inline-block;
+  background-color: rgba(76, 42, 80, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 9px;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#block-contactinfonames p {
+  font-size: 13px;
+}
