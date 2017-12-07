@@ -2,6 +2,9 @@
  * @file
  * Visual styles for Showcase Lite's background image block.
  */
+ #block-backgroundimagebannerfrontpage {
+  background-color: #4C2A50;
+ }
 .container-fluid .field--mt-background-image-block {
   margin: 0 -15px;
 }
@@ -34,6 +37,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin: 0 4%;
 }
 .background-image.background-image--attachment-fixed {
   background-attachment: fixed;
@@ -54,8 +58,15 @@
   left: 0;
   bottom: 0;
   right: 0;
+  opacity: 0.2;
 }
 .background-image-block__section .background-image-overlay + .container,
 .background-image-block__section .background-image-overlay + .container-fluid {
   background-color: transparent;
 }
+.region--white-background > .bottom-spacing-medium > .text-center {
+  float: right;
+}
+/* .region--white-background .text-center .block-title, .region--white-background .text-center .bottom-spacing-medium {
+  color: white;
+} */

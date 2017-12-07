@@ -1,7 +1,7 @@
 name: Showcase Lite
 type: theme
 base theme: classy
-description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+description: 'Showcase Lite theme, customized by AppDate for ippasia-magazine.gr. A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
 # core: 8.x
 libraries:
   - showcase_lite/fontawesome
@@ -55,7 +55,7 @@ regions:
   footer: 'Subfooter Second'
 
 # Information added by Drupal.org packaging script on 2017-03-29
-version: '8.x-1.0'
+version: '8.x-1.0-customized'
 core: '8.x'
 project: 'showcase_lite'
 datestamp: 1490763787

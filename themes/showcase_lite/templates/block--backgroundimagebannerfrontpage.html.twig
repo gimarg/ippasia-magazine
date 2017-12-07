@@ -35,13 +35,15 @@
   {{ title_suffix }}
   {% block content %}
     <div class="background-image-block__section field--mt-background-image-block">
-    <div class="background-image background-image--attachment-scroll" style="background-image: url(themes/showcase_lite/images/young-dressage-rider-on-white-horse-AYJTYH.jpg);">&nbsp;</div>
+    <div class="background-image background-image--attachment-scroll">
+    {{ drupal_view('eikones_archikes_selidas', 'default') }}
+    </div>
 
-    <div class="background-image-overlay region--dark-typography region--white-background" style="opacity: 0.6;">&nbsp;</div>
+    <div class="background-image-overlay region--dark-typography region--white-background">&nbsp;</div>
 
     <div class="container-fluid region--dark-typography region--white-background block">
     <div class="row bottom-spacing-medium">
-    <div class="col-md-8 col-md-offset-2 text-center">
+    <div class="col-md-6 col-md-offset-2 text-center">
     <h3 class="block-title block-title--extra-large">Περιοδικό ΙΠΠΑΣΙΑ</h3>
 
     <div class="bottom-spacing-medium">
